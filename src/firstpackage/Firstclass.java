@@ -4,6 +4,7 @@
 package firstpackage;
 import javax.swing.JOptionPane;
 
+import java.util.Scanner;
 /**
  * @author CK121642
  *
@@ -15,6 +16,7 @@ public class Firstclass {
 	 */
 	public static void main(String[] args) 
 	{
+	Scanner inputDevice = new Scanner(System.in);
 	int userInput;
 	
 	
@@ -44,12 +46,25 @@ public class Firstclass {
 	
 	//Three decisions are given(Choice)
 	
-	//Player chooses to give the citizen the finger
+	//Player chooses to give the citizen the finger(Choice one)
 	
-	//Player chooses to go north
+	//Player chooses to go north(Choice two)
 	
-	//Player  chooses to disregard the citizen and head south
+	//Player  chooses to disregard the citizen and head south(Choice three)
 	
+	//If player chooses option one, he/she gets this message
+	JOptionPane.showMessageDialog(null, "You look out into the wastes and see a giant radscorpion ripping into one of your cousin."
+			+ "\nSpilling his entrails onto the ground.");
+	
+	//If player chooses option two, he/she gets this message
+	JOptionPane.showMessageDialog(null, "You bring food and water with you, heading north, you know it will be some time before you find anything."
+			+ "\nTwo days of walking later, you're walking towards a town in the distance."
+			+ "\nYou hear the tick of your Geiger counter tick as you come closer, but the amount of radiation is not harmful."
+			+ "\nYou enter the town, promptly called Gecko. A man with a horridly disfigured face asks you to assist him with something."
+			+ "\nDo you choose to do so?");
+	
+	//If player chooses option three, he/she gets this message
+	JOptionPane.showMessageDialog(null, "After a long day of travel you come across a destroyed gas station");   
 
 	
 	}
